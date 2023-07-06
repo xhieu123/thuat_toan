@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function selectionSort(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            let min = arr[i]
+            let indexOfMin = i
+            for (let j = i; j < arr.length; j++) {
+                if (min >arr[[j+1]]){
+                    min = arr[j+1]
+                    indexOfMin = j+1
+                }
+            }
+            arr[indexOfMin]= arr[i]
+            arr[i] = min
+        }
+        console.log(arr)
+    }
+</script>
+</body>
+</html>
